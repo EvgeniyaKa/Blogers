@@ -25,7 +25,6 @@ const blogersColor = document.querySelectorAll('.blogers__color');
 function show() {
     bloger.forEach((item, i) => {
         item.addEventListener('mouseover', (e) => {
-            console.log(blogersColor[i]);
             blogersColor[i].style.opacity = "0";
         })
     })
@@ -34,7 +33,6 @@ function show() {
 function close() {
     bloger.forEach((item, i) => {
         item.addEventListener('mouseout', (e) => {
-            console.log(blogersColor[i]);
             blogersColor[i].style.opacity = "0.5";
         })
     })
