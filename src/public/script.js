@@ -43,7 +43,7 @@ function close() {
 show();
 close();
 
-const filtersButtonOpen = document.querySelectorAll('.filters__block');
+const filtersButtonOpen = document.querySelectorAll('.filters__button_open');
 const filtersOpen = document.querySelectorAll('.filters_open');
 const closeFilter = document.querySelectorAll('.closeFilter_svg');
 
