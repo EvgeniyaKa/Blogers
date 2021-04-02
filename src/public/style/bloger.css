@@ -153,7 +153,7 @@
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
-    width: 1304px;
+    width: 100%;
 }
 .blog_slider {
     margin-right: 10px;

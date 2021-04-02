@@ -145,4 +145,8 @@
     .slider__line {
         width: calc(210px / 3);
     }
+    .filters_open {
+        top: 20px;
+        left: -210px;
+    }
 }
