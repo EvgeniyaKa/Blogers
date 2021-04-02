@@ -23,7 +23,6 @@ const bloger = document.querySelectorAll('.blog');
 const blogersColor = document.querySelectorAll('.blogers__color');
 
 function show() {
-    console.log(bloger);
     bloger.forEach((item, i) => {
         item.addEventListener('mouseover', (e) => {
             console.log(blogersColor[i]);
@@ -33,7 +32,6 @@ function show() {
 };
 
 function close() {
-    console.log(bloger);
     bloger.forEach((item, i) => {
         item.addEventListener('mouseout', (e) => {
             console.log(blogersColor[i]);
@@ -44,4 +42,31 @@ function close() {
 
 show();
 close();
+
+const filtersButtonOpen = document.querySelectorAll('.filters__button_open');
+const filtersOpen = document.querySelectorAll('.filters_open');
+const closeFilter = document.querySelectorAll('.closeFilter_svg');
+
+function filterShow() {
+    filtersButtonOpen.forEach((item, id) => {
+        item.addEventListener('click', (e) => {
+            item.classList.add("filters_trunsform");
+            filtersOpen[id].style.display = 'block';
+        });
+    });
+};
+
+function filterClose() {
+    closeFilter.forEach((item, id) => {
+        item.addEventListener('click', (e) => {
+            filtersOpen[id].style.display = 'none';
+            filtersButtonOpen[id].classList.remove("filters_trunsform");
+        });
+    });
+};
+
+filterShow();
+filterClose();
+
+
 

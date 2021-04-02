@@ -2,7 +2,7 @@
     background-image: url('');
     background-repeat: no-repeat;
     width: 5px;
-    height: 0px
+    height: 5px
     }
     
     ::-webkit-scrollbar-track {
@@ -23,7 +23,7 @@
     background-image: url('');
     background-repeat: no-repeat;
     width: 4px;
-    height: 0px;
+    height: 4px;
     }
     
     ::-webkit-scrollbar{
